@@ -1,0 +1,573 @@
+/* “娄山关”的专属山脊路线样式，仅在 detail.html?spot=four 时加载。 */
+
+.detail-content[data-spot="four"] .route-note {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 96% 1%, rgba(217, 164, 65, 0.16), transparent 27%),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.96), rgba(250, 241, 224, 0.94));
+}
+
+.detail-content[data-spot="four"] .loushan-route {
+  --pass-red: #a7191f;
+  --pass-deep: #641116;
+  --pass-gold: #d9a441;
+  --pass-ink: #604b42;
+  --pass-paper: #fffaf0;
+}
+
+.detail-content[data-spot="four"] .loushan-route__intro {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: start;
+  padding: 12px 0 42px;
+}
+
+.detail-content[data-spot="four"] .loushan-route__year {
+  position: sticky;
+  top: 92px;
+  display: grid;
+  gap: 2px;
+  padding: 22px 18px;
+  color: #fff7e8;
+  background: var(--pass-deep);
+  border-top: 4px solid var(--pass-gold);
+  box-shadow: 0 12px 26px rgba(83, 47, 33, 0.16);
+}
+
+.detail-content[data-spot="four"] .loushan-route__year strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.25rem, 6vw, 4.15rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.detail-content[data-spot="four"] .loushan-route__year span {
+  color: #ffd77d;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.detail-content[data-spot="four"] .loushan-route__lead {
+  min-width: 0;
+}
+
+.detail-content[data-spot="four"] .loushan-route__kicker {
+  margin: 0 0 7px;
+  color: var(--pass-gold);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+
+.detail-content[data-spot="four"] .loushan-route__section-title {
+  margin: 0 0 14px;
+  color: var(--pass-deep);
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  line-height: 1.24;
+}
+
+.detail-content[data-spot="four"] .loushan-route__section-title--links {
+  margin-top: 70px;
+}
+
+.detail-content[data-spot="four"] .loushan-route__links {
+  display: block;
+}
+
+.detail-content[data-spot="four"] .loushan-route__links a {
+  display: flex;
+  color: var(--pass-red);
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.detail-content[data-spot="four"] .loushan-route__links a:hover {
+  display: flex;
+  color: var(--pass-deep);
+  border-color: var(--pass-deep);
+}
+
+.detail-content[data-spot="four"] .loushan-route__links a:focus-visible {
+  display: flex;
+  color: var(--pass-deep);
+  border-color: var(--pass-deep);
+  outline: 3px solid rgba(100, 17, 22, 0.24);
+  outline-offset: 2px;
+}
+
+.detail-content[data-spot="four"] .loushan-route__lead > p:last-of-type {
+  margin: 0;
+  color: var(--pass-ink);
+}
+
+.detail-content[data-spot="four"] .loushan-route__lead blockquote {
+  padding: 18px 21px;
+  margin: 24px 0 0;
+  color: var(--pass-deep);
+  background: rgba(167, 25, 31, 0.065);
+  border-left: 4px solid var(--pass-gold);
+}
+
+.detail-content[data-spot="four"] .loushan-route__lead blockquote p {
+  margin: 0;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: clamp(1.13rem, 2.6vw, 1.46rem);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.detail-content[data-spot="four"] .loushan-route__lead cite {
+  display: block;
+  margin-top: 5px;
+  color: #856e63;
+  font-size: 0.82rem;
+  font-style: normal;
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin-bottom: 58px;
+  border: 1px solid rgba(100, 17, 22, 0.16);
+  box-shadow: 0 9px 24px rgba(83, 47, 33, 0.08);
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav a {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  padding: 14px 8px 15px;
+  color: var(--pass-deep);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 250, 240, 0.88);
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav a + a {
+  border-left: 1px solid rgba(100, 17, 22, 0.13);
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav a:hover,
+.detail-content[data-spot="four"] .loushan-route__nav a:focus-visible {
+  color: #fffaf0;
+  background: var(--pass-red);
+  outline: 3px solid #fff4d7;
+  outline-offset: -4px;
+  transform: translateY(-2px);
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav span {
+  color: #7b4e05;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.detail-content[data-spot="four"] .loushan-route__nav a:hover span,
+.detail-content[data-spot="four"] .loushan-route__nav a:focus-visible span {
+  color: #fff4d7;
+}
+
+.detail-content[data-spot="four"] .loushan-timeline {
+  position: relative;
+}
+
+.detail-content[data-spot="four"] .loushan-timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 2px;
+  background: linear-gradient(var(--pass-gold), var(--pass-red) 14%, var(--pass-red) 86%, var(--pass-gold));
+  content: "";
+}
+
+.detail-content[data-spot="four"] .loushan-stop {
+  position: relative;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  scroll-margin-top: 96px;
+}
+
+.detail-content[data-spot="four"] .loushan-stop + .loushan-stop {
+  margin-top: 46px;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 19px 0 0 11px;
+  color: #fff7e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: var(--pass-deep);
+  border: 5px solid #f8edda;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--pass-gold);
+}
+
+.detail-content[data-spot="four"] .loushan-stop__card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(290px, 1.08fr);
+  min-width: 0;
+  overflow: hidden;
+  background: var(--pass-paper);
+  border: 1px solid rgba(217, 164, 65, 0.32);
+  border-bottom: 3px solid var(--pass-red);
+  box-shadow: 0 12px 28px rgba(83, 47, 33, 0.12);
+}
+
+.detail-content[data-spot="four"] .loushan-stop:nth-child(even) .loushan-stop__text {
+  order: 2;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__text {
+  align-self: center;
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.detail-content[data-spot="four"] .loushan-stop__label {
+  margin: 0 0 7px;
+  color: var(--pass-red);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.detail-content[data-spot="four"] .loushan-stop h4 {
+  margin: 0 0 12px;
+  color: var(--pass-deep);
+  font-size: clamp(1.28rem, 2.7vw, 1.65rem);
+  line-height: 1.35;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__text > p:last-of-type {
+  margin: 0;
+  color: var(--pass-ink);
+  line-height: 1.85;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__media {
+  position: relative;
+  min-width: 0;
+  min-height: 340px;
+  margin: 0;
+  overflow: hidden;
+  background: #ead8ba;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__media--portrait img {
+  object-position: center 40%;
+}
+
+.detail-content[data-spot="four"] .loushan-stop__card:hover .loushan-stop__media img {
+  transform: scale(1.025);
+}
+
+.detail-content[data-spot="four"] .loushan-stop__media figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 34px 16px 13px;
+  color: #fffaf0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background: linear-gradient(transparent, rgba(62, 18, 18, 0.82));
+}
+
+.detail-content[data-spot="four"] .loushan-field-note {
+  padding: 15px 17px;
+  margin-top: 20px;
+  color: #765d50;
+  background: rgba(217, 164, 65, 0.11);
+  border-left: 3px solid var(--pass-gold);
+}
+
+.detail-content[data-spot="four"] .loushan-field-note strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--pass-deep);
+  font-size: 0.9rem;
+}
+
+.detail-content[data-spot="four"] .loushan-field-note p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.detail-content[data-spot="four"] .loushan-etiquette {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 24px;
+  padding: 27px 30px;
+  margin: 58px 0 2px 72px;
+  color: var(--pass-ink);
+  background: rgba(100, 17, 22, 0.07);
+  border-top: 2px solid var(--pass-gold);
+}
+
+.detail-content[data-spot="four"] .loushan-etiquette > span {
+  padding-top: 4px;
+  color: var(--pass-red);
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.detail-content[data-spot="four"] .loushan-etiquette h4 {
+  margin: 0 0 7px;
+  color: var(--pass-deep);
+  font-size: 1.16rem;
+}
+
+.detail-content[data-spot="four"] .loushan-etiquette p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+@media (max-width: 920px) {
+  .detail-content[data-spot="four"] .loushan-route__nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a:nth-child(5) {
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a:nth-child(n + 5) {
+    border-top: 1px solid rgba(100, 17, 22, 0.13);
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__card {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 0.9fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .detail-content[data-spot="four"] .loushan-route__intro {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__year {
+    position: static;
+    width: fit-content;
+    min-width: 160px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 44px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a:nth-child(n + 3) {
+    border-top: 1px solid rgba(100, 17, 22, 0.13);
+  }
+
+  .detail-content[data-spot="four"] .loushan-timeline::before {
+    left: 22px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__marker {
+    width: 42px;
+    height: 42px;
+    margin: 16px 0 0 1px;
+    border-width: 4px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop:nth-child(even) .loushan-stop__text,
+  .detail-content[data-spot="four"] .loushan-stop__text {
+    order: 2;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__media {
+    min-height: 250px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__media img {
+    min-height: 250px;
+    max-height: 360px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-etiquette {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    margin-left: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-content[data-spot="four"] .loushan-route__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a + a {
+    border-top: 1px solid rgba(100, 17, 22, 0.13);
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="four"] .loushan-timeline::before {
+    left: 18px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__marker {
+    width: 36px;
+    height: 36px;
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__text {
+    padding: 22px 20px 25px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-etiquette {
+    padding: 22px 20px;
+    margin-left: 40px;
+  }
+}
+
+/* 手机端将七站索引改为横向滑动，并压缩装饰留白而不压缩正文。 */
+@media (max-width: 680px) {
+  .detail-content[data-spot="four"] .loushan-route__intro {
+    padding-bottom: 32px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__year {
+    min-width: 146px;
+    padding: 17px 16px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 -2px 38px;
+    padding: 2px 2px 10px;
+    overflow-x: auto;
+    border: 0;
+    box-shadow: none;
+    scroll-padding-inline: 2px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgba(167, 25, 31, 0.42) transparent;
+    scrollbar-width: thin;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__nav a:nth-child(n) {
+    flex: 0 0 min(66vw, 174px);
+    align-content: center;
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid rgba(100, 17, 22, 0.16);
+    border-radius: 7px;
+    scroll-snap-align: start;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop + .loushan-stop {
+    margin-top: 36px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__text {
+    padding: 20px 18px 23px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__media,
+  .detail-content[data-spot="four"] .loushan-stop__media img {
+    min-height: 220px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-etiquette {
+    padding: 20px 18px;
+    margin: 44px 0 2px 48px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__section-title--links {
+    margin-top: 48px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-route__links a {
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .detail-content[data-spot="four"] .loushan-timeline::before {
+    left: 17px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__marker {
+    width: 34px;
+    height: 34px;
+    margin-top: 14px;
+    border-width: 3px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__text {
+    padding: 18px 16px 21px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-stop__media,
+  .detail-content[data-spot="four"] .loushan-stop__media img {
+    min-height: 205px;
+  }
+
+  .detail-content[data-spot="four"] .loushan-etiquette {
+    padding: 18px 16px;
+    margin-left: 38px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .detail-content[data-spot="four"] .loushan-stop__card:hover .loushan-stop__media img {
+    transform: none;
+  }
+}

@@ -1,0 +1,413 @@
+.detail-page {
+  min-width: 0;
+}
+
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 7px 11px;
+  color: #fff7e8;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.detail-back:hover {
+  color: #ffd77d;
+  border-color: #ffd77d;
+}
+
+.detail-back:focus-visible {
+  color: #ffd77d;
+  outline: 3px solid #ffd77d;
+  outline-offset: 2px;
+}
+
+.detail-main {
+  max-width: none;
+  padding: 0;
+}
+
+.detail-hero {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  color: white;
+}
+
+.detail-hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: hero-in 0.85s ease both;
+}
+
+.detail-hero-cover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(94, 10, 14, 0.93), rgba(112, 16, 20, 0.42));
+}
+
+.detail-hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  padding: 190px 24px 80px;
+  margin: auto;
+}
+
+.detail-hero-text h1 {
+  max-width: 750px;
+}
+
+.detail-hero-text > p:last-child {
+  max-width: 660px;
+  font-size: 1.08rem;
+}
+
+.detail-content {
+  max-width: 1120px;
+  padding: 76px 24px;
+  margin: auto;
+}
+
+.detail-intro {
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.detail-intro span,
+.route-note span {
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+}
+
+.detail-intro h2,
+.route-note h2 {
+  margin: 4px 0 14px;
+  color: var(--deep-red);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.detail-intro p {
+  margin: 0;
+  color: #604b42;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.guide-grid article,
+.route-note {
+  background: var(--paper);
+  border-bottom: 3px solid var(--red);
+  box-shadow: 0 10px 28px rgba(83, 47, 33, 0.1);
+}
+
+.guide-grid article {
+  padding: 28px;
+}
+
+.guide-grid h3 {
+  margin: 0 0 12px;
+  color: var(--deep-red);
+  font-size: 1.25rem;
+}
+
+.guide-grid h3::before {
+  margin-right: 8px;
+  color: var(--gold);
+  content: "◆";
+}
+
+.guide-grid p {
+  margin: 0;
+  color: #604b42;
+}
+
+.route-note {
+  padding: 36px clamp(25px, 5vw, 60px);
+  margin-top: 28px;
+}
+
+.route-content {
+  margin-top: 22px;
+  color: #604b42;
+}
+
+.route-content nav a:focus-visible {
+  outline: 3px solid #8a4f08;
+  outline-offset: -4px;
+}
+
+.route-image-placeholder {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 250px;
+  gap: 8px;
+  padding: 24px;
+  color: #765d50;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(100, 17, 22, 0.08), rgba(217, 164, 65, 0.13)),
+    repeating-linear-gradient(45deg, #ead8ba 0 14px, #f4e7cf 14px 28px);
+  aspect-ratio: 4 / 3;
+}
+
+.route-image-placeholder span {
+  color: var(--deep-red);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.route-image-placeholder small {
+  max-width: 24em;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.more-images-link.is-disabled {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #806f66;
+  font-size: 0.92rem;
+  cursor: not-allowed;
+}
+
+/* 可复用的图文排版：景点也可以在 route HTML 中换成自己的结构和类名。 */
+.route-story {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(24px, 4vw, 46px);
+  align-items: start;
+}
+
+.route-story__media {
+  position: sticky;
+  top: 92px;
+  margin: 0;
+}
+
+.route-story__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 12px 26px rgba(83, 47, 33, 0.16);
+}
+
+.route-story__media figcaption {
+  margin-top: 9px;
+  color: #856e63;
+  font-size: 0.86rem;
+}
+
+.route-lead {
+  padding: 14px 18px;
+  margin: 0 0 20px;
+  color: var(--deep-red);
+  font-weight: bold;
+  background: rgba(174, 32, 38, 0.07);
+  border-left: 4px solid var(--gold);
+}
+
+.route-steps {
+  padding-left: 1.3em;
+  margin: 0;
+}
+
+.route-steps li + li {
+  margin-top: 12px;
+}
+
+.page-enter {
+  animation: page-enter 0.7s 0.14s ease both;
+}
+
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-in {
+  from { opacity: 0; transform: scale(1.06); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 680px) {
+  .detail-page .nav-wrap {
+    justify-content: space-between;
+  }
+
+  .detail-page .brand {
+    flex: 1 1 auto;
+  }
+
+  .detail-back {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 6px 4px;
+    overflow: hidden;
+    font-size: 0.86rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .detail-hero {
+    display: grid;
+    min-height: clamp(460px, 62svh, 540px);
+  }
+
+  .detail-hero-cover {
+    background: linear-gradient(180deg, rgba(94, 10, 14, 0.78), rgba(94, 10, 14, 0.46) 46%, rgba(70, 8, 11, 0.8));
+  }
+
+  .detail-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: inherit;
+    padding: calc(78px + env(safe-area-inset-top)) 16px 44px;
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-left: max(16px, env(safe-area-inset-left));
+  }
+
+  .detail-hero-text h1 {
+    max-width: 100%;
+    font-size: clamp(2.04rem, 10.5vw, 3.2rem);
+    line-height: 1.25;
+    letter-spacing: 0.055em;
+    overflow-wrap: anywhere;
+  }
+
+  .detail-hero-text > p:last-child {
+    margin: 18px 0 0;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .detail-content {
+    padding: 52px 16px 58px;
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-left: max(16px, env(safe-area-inset-left));
+  }
+
+  .detail-intro {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .detail-intro > span,
+  .detail-intro h2 {
+    display: block;
+    text-align: center;
+  }
+
+  .detail-intro h2,
+  .route-note h2 {
+    font-size: clamp(1.72rem, 8.5vw, 2.15rem);
+  }
+
+  .detail-intro p {
+    font-size: 0.96rem;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .guide-grid article {
+    padding: 22px 20px;
+  }
+
+  .guide-grid h3 {
+    font-size: 1.16rem;
+  }
+
+  .guide-grid p {
+    font-size: 0.95rem;
+  }
+
+  .route-note {
+    padding: 28px 14px 34px;
+    margin: 22px -6px 0;
+  }
+
+  .route-content {
+    margin-top: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .route-image-placeholder {
+    min-height: 205px;
+    padding: 18px;
+  }
+
+  .route-story {
+    grid-template-columns: 1fr;
+  }
+
+  .route-story__media {
+    position: static;
+  }
+
+  .route-lead {
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .detail-page .brand {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+
+  .detail-page .brand::before {
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    content: "红色足迹";
+  }
+
+  .detail-hero-text {
+    padding-right: max(14px, env(safe-area-inset-right));
+    padding-left: max(14px, env(safe-area-inset-left));
+  }
+
+  .detail-content {
+    padding-right: max(14px, env(safe-area-inset-right));
+    padding-left: max(14px, env(safe-area-inset-left));
+  }
+
+  .route-note {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .detail-hero {
+    min-height: 100svh;
+  }
+
+  .detail-hero-text {
+    padding-top: calc(68px + env(safe-area-inset-top));
+    padding-bottom: 28px;
+  }
+}

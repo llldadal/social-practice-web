@@ -1,0 +1,445 @@
+/* “四渡赤水纪念馆”的专属时间线样式，仅在 detail.html?spot=two 时加载。 */
+
+.detail-content[data-spot="two"] .route-note {
+  overflow: hidden;
+}
+
+.detail-content[data-spot="two"] .crossing-route {
+  --timeline-red: #a7191f;
+  --timeline-deep: #641116;
+  --timeline-gold: #d9a441;
+  --timeline-ink: #604b42;
+}
+
+.detail-content[data-spot="two"] .crossing-route__intro {
+  max-width: 760px;
+  padding: 10px 0 34px;
+}
+
+.detail-content[data-spot="two"] .crossing-route__eyebrow {
+  margin: 0 0 8px;
+  color: var(--timeline-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.detail-content[data-spot="two"] .crossing-route__section-title {
+  margin: 0 0 12px;
+  color: var(--timeline-deep);
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+}
+
+.detail-content[data-spot="two"] .crossing-route > .crossing-route__section-title {
+  margin-top: 70px;
+}
+
+.detail-content[data-spot="two"] .crossing-route > a {
+  display: flex;
+  color: var(--timeline-red);
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.detail-content[data-spot="two"] .crossing-route > a:hover {
+  display: flex;
+  color: var(--timeline-deep);
+  border-color: var(--timeline-deep);
+}
+
+.detail-content[data-spot="two"] .crossing-route > a:focus-visible {
+  display: flex;
+  color: var(--timeline-deep);
+  border-color: var(--timeline-deep);
+  outline: 0;
+}
+
+.detail-content[data-spot="two"] .crossing-route__intro > p:last-child {
+  margin: 0;
+  color: var(--timeline-ink);
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 54px;
+  border: 1px solid rgba(100, 17, 22, 0.16);
+  box-shadow: 0 9px 24px rgba(83, 47, 33, 0.08);
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav a {
+  display: grid;
+  gap: 2px;
+  padding: 15px 12px;
+  color: var(--timeline-deep);
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 250, 240, 0.84);
+  transition: color 0.2s, background 0.2s;
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav a + a {
+  border-left: 1px solid rgba(100, 17, 22, 0.16);
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav a:hover {
+  color: #fffaf0;
+  background: var(--timeline-red);
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav a:focus-visible {
+  color: #fffaf0;
+  background: var(--timeline-red);
+  outline: 3px solid #fff4d7;
+  outline-offset: -4px;
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav span {
+  color: #7b4e05;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.detail-content[data-spot="two"] .crossing-route__nav a:hover span,
+.detail-content[data-spot="two"] .crossing-route__nav a:focus-visible span {
+  color: #fff4d7;
+}
+
+.detail-content[data-spot="two"] .crossing-timeline {
+  position: relative;
+}
+
+.detail-content[data-spot="two"] .crossing-timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 39px;
+  width: 2px;
+  background: linear-gradient(var(--timeline-gold), var(--timeline-red) 18%, var(--timeline-red) 82%, var(--timeline-gold));
+  content: "";
+}
+
+.detail-content[data-spot="two"] .crossing-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  scroll-margin-top: 96px;
+}
+
+.detail-content[data-spot="two"] .crossing-stage + .crossing-stage {
+  margin-top: 70px;
+}
+
+.detail-content[data-spot="two"] .crossing-stage__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-left: 12px;
+  color: #fffaf0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: var(--timeline-deep);
+  border: 5px solid #f8edda;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--timeline-gold);
+}
+
+.detail-content[data-spot="two"] .crossing-stage__content {
+  min-width: 0;
+}
+
+.detail-content[data-spot="two"] .crossing-stage__heading {
+  max-width: 720px;
+  padding-bottom: 20px;
+}
+
+.detail-content[data-spot="two"] .crossing-stage__date {
+  margin: 0 0 3px;
+  color: var(--timeline-red);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.detail-content[data-spot="two"] .crossing-stage__heading h4 {
+  margin: 0 0 10px;
+  color: var(--timeline-deep);
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+}
+
+.detail-content[data-spot="two"] .crossing-stage__heading > p:last-child {
+  margin: 0;
+  color: var(--timeline-ink);
+}
+
+.detail-content[data-spot="two"] .crossing-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.detail-content[data-spot="two"] .crossing-photo {
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #f0dfc2;
+  border: 0;
+  box-shadow: 0 10px 24px rgba(83, 47, 33, 0.13);
+}
+
+.detail-content[data-spot="two"] .crossing-photo--wide {
+  grid-column: 1 / -1;
+}
+
+.detail-content[data-spot="two"] .crossing-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background:
+    linear-gradient(135deg, rgba(100, 17, 22, 0.12), rgba(217, 164, 65, 0.16)),
+    repeating-linear-gradient(45deg, #ead8ba 0, #ead8ba 14px, #f4e7cf 14px, #f4e7cf 28px);
+}
+
+.detail-content[data-spot="two"] .crossing-photo--wide img {
+  aspect-ratio: 16 / 7;
+}
+
+.detail-content[data-spot="two"] .crossing-photo--tall {
+  grid-row: span 2;
+}
+
+.detail-content[data-spot="two"] .crossing-photo--tall img {
+  height: calc(100% - 48px);
+  min-height: 400px;
+  aspect-ratio: auto;
+}
+
+.detail-content[data-spot="two"] .crossing-photo figcaption {
+  min-height: 48px;
+  padding: 12px 14px;
+  color: #765d50;
+  font-size: 0.82rem;
+  background: #fffaf0;
+}
+
+.detail-content[data-spot="two"] .crossing-route__ending {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 22px;
+  padding: 25px 28px;
+  margin: 70px 0 4px 80px;
+  color: var(--timeline-ink);
+  background: rgba(167, 25, 31, 0.07);
+  border-top: 2px solid var(--timeline-gold);
+}
+
+.detail-content[data-spot="two"] .crossing-route__ending span {
+  color: var(--timeline-deep);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.detail-content[data-spot="two"] .crossing-route__ending p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .detail-content[data-spot="two"] .crossing-route__nav {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 42px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav a:nth-child(3) {
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav a:nth-child(n + 3) {
+    border-top: 1px solid rgba(100, 17, 22, 0.16);
+  }
+
+  .detail-content[data-spot="two"] .crossing-timeline::before {
+    left: 23px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage {
+    grid-template-columns: 54px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage__marker {
+    width: 44px;
+    height: 44px;
+    margin-left: 1px;
+    border-width: 4px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="two"] .crossing-photo--wide {
+    grid-column: auto;
+  }
+
+  .detail-content[data-spot="two"] .crossing-photo--wide img,
+  .detail-content[data-spot="two"] .crossing-photo img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .detail-content[data-spot="two"] .crossing-photo--tall {
+    grid-row: auto;
+  }
+
+  .detail-content[data-spot="two"] .crossing-photo--tall img {
+    height: auto;
+    min-height: 0;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__ending {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-left: 54px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-content[data-spot="two"] .crossing-route__eyebrow {
+    letter-spacing: 0.07em;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav a + a {
+    border-top: 1px solid rgba(100, 17, 22, 0.16);
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="two"] .crossing-timeline::before {
+    left: 19px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage__marker {
+    width: 38px;
+    height: 38px;
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__ending {
+    padding: 20px;
+    margin-left: 44px;
+  }
+}
+
+.detail-content[data-spot="two"] .crossing-route > a {
+  display: flex;
+  color: var(--timeline-red);
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.detail-content[data-spot="two"] .crossing-route > a:hover {
+  display: flex;
+  color: var(--timeline-deep);
+  border-color: var(--timeline-deep);
+}
+
+/* 手机端路线索引使用横向触控条，时间线正文获得更多可用宽度。 */
+@media (max-width: 680px) {
+  .detail-content[data-spot="two"] .crossing-route__intro {
+    padding-bottom: 26px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 -2px 38px;
+    padding: 2px 2px 10px;
+    overflow-x: auto;
+    border: 0;
+    box-shadow: none;
+    scroll-padding-inline: 2px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgba(167, 25, 31, 0.42) transparent;
+    scrollbar-width: thin;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__nav a:nth-child(n) {
+    flex: 0 0 min(68vw, 178px);
+    align-content: center;
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid rgba(100, 17, 22, 0.16);
+    border-radius: 7px;
+    scroll-snap-align: start;
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage + .crossing-stage {
+    margin-top: 48px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__ending {
+    padding: 20px 18px;
+    margin: 48px 0 4px 48px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route > .crossing-route__section-title {
+    margin-top: 48px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route > a {
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .detail-content[data-spot="two"] .crossing-timeline::before {
+    left: 17px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage__marker {
+    width: 34px;
+    height: 34px;
+    margin-left: 0;
+    border-width: 3px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-stage__heading h4 {
+    font-size: 1.24rem;
+    line-height: 1.4;
+  }
+
+  .detail-content[data-spot="two"] .crossing-route__ending {
+    padding: 18px 16px;
+    margin-left: 38px;
+  }
+
+  .detail-content[data-spot="two"] .crossing-photo figcaption {
+    font-size: 0.86rem;
+  }
+}

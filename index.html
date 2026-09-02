@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>社会实践 · 红色足迹游览指南</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="x1" class="home-page">
+  <header class="topbar">
+    <div class="nav-wrap">
+      <div class="brand">红色足迹 · 实践成果</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>菜单</span>
+      </button>
+      <nav id="primary-nav" aria-label="页面导航">
+        <!-- 链接文字与 href 中的占位 ID 均可按需要替换 -->
+        <a href="#x1" class="active" aria-current="location">首页</a>
+        <a href="#x2">路线概览</a>
+        <a href="#x3">景点指南</a>
+        <a href="#x4">实践感悟</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content reveal visible">
+      <p class="eyebrow">社会实践 · 红色足迹游览指南</p>
+      <h1>追寻红色足迹</h1>
+      <p>2026年是中国工农红军长征胜利90周年。为讲好红色故事，赓续红色基因，南开大学“红韵同音”实践队来到贵州遵义，按照“遵义会议—四渡赤水”的时间顺序重走长征路。</p>
+      <a class="button" href="#x3">开启游览指南</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="x2" class="reveal">
+      <div class="section-heading">
+        <span>ROUTE OVERVIEW</span>
+        <h2>路线概览</h2>
+        <p>遵义红色资源丰富而点位分散。结合队员所见所思，我们将各点位的看点与游览路线串联起来，帮助游客获得更好的红色文化之旅体验。</p>
+      </div>
+      <div class="map-box" aria-label="遵义红色足迹实践路线示意图">
+        <div class="map-head">
+          <div>
+            <span class="map-kicker">GUIZHOU · ZUNYI</span>
+            <h3>黔北红色足迹</h3>
+          </div>
+          <div class="map-legend" aria-label="地图图例">
+            <span><i class="legend-dot"></i>实践点位</span>
+            <span><i class="legend-line"></i>串联顺序</span>
+            <span class="map-pan-hint">← 左右滑动地图 →</span>
+          </div>
+        </div>
+
+        <div class="map-canvas">
+          <svg class="route-map" viewBox="0 0 1000 560" role="img" aria-labelledby="route-map-title route-map-desc">
+            <title id="route-map-title">遵义红色足迹实践路线图</title>
+            <desc id="route-map-desc">地图按大致经纬度关系标出遵义会议纪念馆、青杠坡战斗遗址、土城四渡赤水纪念馆、娄山关和茅台四渡赤水纪念园。</desc>
+            <defs>
+              <linearGradient id="paperWash" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f7edda"/>
+                <stop offset="1" stop-color="#ead7b6"/>
+              </linearGradient>
+              <filter id="mapShadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5b351e" flood-opacity=".22"/>
+              </filter>
+              <pattern id="mapGrid" width="54" height="54" patternUnits="userSpaceOnUse">
+                <path d="M54 0H0V54" fill="none" stroke="#9b7a55" stroke-width="1" opacity=".12"/>
+              </pattern>
+            </defs>
+
+            <rect width="1000" height="560" rx="22" fill="url(#paperWash)"/>
+            <rect width="1000" height="560" rx="22" fill="url(#mapGrid)"/>
+
+            <g class="contours" fill="none" stroke="#98734a" stroke-width="2" opacity=".18">
+              <path d="M-40 98C91 22 177 142 300 76s223-58 313 3 196 36 301-21 145-5 161 38"/>
+              <path d="M-10 154c144-69 232 35 347-29s215-46 302 12 179 30 270-11 139 9 168 55"/>
+              <path d="M-46 435c123-54 198-35 274 18s168 61 247 7 162-78 252-20 192 70 307 3"/>
+              <path d="M-25 493c121-48 210-15 290 38s174 51 252 0 142-64 233-13 183 61 279 8"/>
+              <path d="M626 202c45-40 111-44 151-10 33 28 29 72-9 99-46 33-124 25-153-13-21-28-15-53 11-76Z"/>
+              <path d="M651 220c32-25 78-29 105-7 23 18 18 47-8 65-34 23-86 18-106-7-15-19-11-36 9-51Z"/>
+            </g>
+
+            <g class="map-landmarks" aria-hidden="true">
+              <text x="96" y="72">川南</text>
+              <text x="793" y="506">遵义城区</text>
+              <text x="304" y="408">仁怀</text>
+              <text x="91" y="190">土城</text>
+              <text x="750" y="208">大娄山</text>
+            </g>
+
+            <path class="river river-shadow" d="M28 47C72 83 95 111 124 158c27 40 31 69 71 95 55 35 104 16 152 47 42 28 58 28 91 44 42 20 81 79 114 131"/>
+            <path class="river" d="M28 47C72 83 95 111 124 158c27 40 31 69 71 95 55 35 104 16 152 47 42 28 58 28 91 44 42 20 81 79 114 131"/>
+            <text class="river-label" x="274" y="282" transform="rotate(30 274 282)">赤 水 河</text>
+
+            <path class="minor-road" d="M151 118C249 189 329 284 439 333S696 350 855 422"/>
+            <path class="minor-road" d="M855 422C831 356 806 308 805 255"/>
+
+            <path class="practice-route route-underlay" d="M855 422C690 315 390 245 179 110L157 119C413 164 689 219 805 255C681 301 571 319 439 333"/>
+            <path class="practice-route" d="M855 422C690 315 390 245 179 110L157 119C413 164 689 219 805 255C681 301 571 319 439 333"/>
+
+            <g class="map-marker" data-spot="one" role="button" tabindex="0" aria-label="定位到遵义会议纪念馆景点卡片" transform="translate(855 422)">
+              <circle class="marker-halo" r="25"/>
+              <circle class="marker-pin" r="15"/>
+              <text class="marker-number" y="5">1</text>
+              <g class="marker-label" transform="translate(-28 -75)">
+                <rect width="146" height="48" rx="8"/>
+                <text x="14" y="20">遵义会议纪念馆</text>
+                <text class="label-sub" x="14" y="37">遵义 · 红花岗</text>
+              </g>
+            </g>
+
+            <g class="map-marker" data-spot="two" role="button" tabindex="0" aria-label="定位到四渡赤水纪念馆景点卡片" transform="translate(157 119)">
+              <circle class="marker-halo" r="25"/>
+              <circle class="marker-pin" r="15"/>
+              <text class="marker-number" y="5">3</text>
+              <g class="marker-label" transform="translate(-76 28)">
+                <rect width="150" height="48" rx="8"/>
+                <text x="13" y="20">四渡赤水纪念馆</text>
+                <text class="label-sub" x="13" y="37">习水 · 土城古镇</text>
+              </g>
+            </g>
+
+            <g class="map-marker" data-spot="three" role="button" tabindex="0" aria-label="定位到青杠坡战斗遗址景点卡片" transform="translate(179 110)">
+              <circle class="marker-halo" r="25"/>
+              <circle class="marker-pin" r="15"/>
+              <text class="marker-number" y="5">2</text>
+              <g class="marker-label" transform="translate(24 -49)">
+                <rect width="148" height="48" rx="8"/>
+                <text x="13" y="20">青杠坡战斗遗址</text>
+                <text class="label-sub" x="13" y="37">土城东北约 3 km</text>
+              </g>
+            </g>
+
+            <g class="map-marker" data-spot="four" role="button" tabindex="0" aria-label="定位到娄山关景点卡片" transform="translate(805 255)">
+              <circle class="marker-halo" r="25"/>
+              <circle class="marker-pin" r="15"/>
+              <text class="marker-number" y="5">4</text>
+              <g class="marker-label" transform="translate(24 -24)">
+                <rect width="114" height="48" rx="8"/>
+                <text x="13" y="20">娄山关</text>
+                <text class="label-sub" x="13" y="37">汇川 · 大娄山</text>
+              </g>
+            </g>
+
+            <g class="map-marker" data-spot="five" role="button" tabindex="0" aria-label="定位到茅台四渡赤水纪念园景点卡片" transform="translate(439 333)">
+              <circle class="marker-halo" r="25"/>
+              <circle class="marker-pin" r="15"/>
+              <text class="marker-number" y="5">5</text>
+              <g class="marker-label" transform="translate(-74 28)">
+                <rect width="170" height="48" rx="8"/>
+                <text x="13" y="20">四渡赤水纪念园</text>
+                <text class="label-sub" x="13" y="37">仁怀 · 茅台镇</text>
+              </g>
+            </g>
+
+            <g class="north-arrow" transform="translate(930 74)" aria-hidden="true">
+              <text x="0" y="-21">N</text>
+              <path d="M0-12 12 22 0 15-12 22Z"/>
+            </g>
+            <g class="map-scale" transform="translate(755 522)" aria-hidden="true">
+              <path d="M0 0h94"/>
+              <path d="M0-5v10M47-5v10M94-5v10"/>
+              <text x="0" y="-10">0</text>
+              <text x="37" y="-10">约 50 km</text>
+            </g>
+          </svg>
+
+          <aside class="map-caption">
+            <strong>点位按地理方位绘制</strong>
+            <span>虚线为实践点串联示意，并非实时道路导航</span>
+          </aside>
+        </div>
+
+        <ol class="map-stops" aria-label="实践路线站点">
+          <li data-spot="one"><button type="button"><b>01</b><span>遵义会议纪念馆<small>伟大转折</small></span></button></li>
+          <li data-spot="three"><button type="button"><b>02</b><span>青杠坡战斗遗址<small>序幕之战</small></span></button></li>
+          <li data-spot="two"><button type="button"><b>03</b><span>四渡赤水纪念馆<small>运动战史诗</small></span></button></li>
+          <li data-spot="four"><button type="button"><b>04</b><span>娄山关<small>黔北雄关</small></span></button></li>
+          <li data-spot="five"><button type="button"><b>05</b><span>四渡赤水纪念园<small>茅台渡口</small></span></button></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="x3" class="spots">
+      <div class="section-heading reveal">
+        <span>PLACE GUIDE</span>
+        <h2>景点游玩指南</h2>
+        <p>从预约入馆、重点展陈到参观动线，快速规划一场有重点的红色文化之旅。</p>
+      </div>
+      <div class="spot-list">
+        <a class="spot-card reveal" data-spot="one" href="detail.html?spot=one" target="_blank" rel="noopener" aria-label="在新标签页查看遵义会议纪念馆的详细信息和游玩攻略">
+          <img src="资源文件/遵义会议会址/遵义会议纪念馆外部图片.jpg" alt="遵义会议会址与纪念馆外景" loading="lazy" decoding="async">
+          <div class="spot-content"><h2>遵义会议纪念馆</h2><p>馆内沿时间线串联长征背景、遵义会议召开、四渡赤水及后续长征历程；可依次参观一楼大厅、左侧展厅、遵义会议展区、四渡赤水展区和二楼长征主题展。</p></div>
+        </a>
+        <a class="spot-card reveal" data-spot="three" href="detail.html?spot=three" target="_blank" rel="noopener" aria-label="在新标签页查看青杠坡战斗遗址的详细信息和游玩攻略">
+          <img src="资源文件/土城 青杠坡遗址/土城 青杠坡遗址6.jpg" alt="青杠坡战斗遗址" loading="lazy" decoding="async">
+          <div class="spot-content"><h2>青杠坡战斗遗址</h2><p>遗址位于土城东北约3千米，可与土城四渡赤水纪念馆同天游览。沿台阶可依次参观红军烈士陵园、烈士纪念碑、浮雕和红军医院纪念馆。</p></div>
+        </a>
+        <a class="spot-card reveal" data-spot="two" href="detail.html?spot=two" target="_blank" rel="noopener" aria-label="在新标签页查看四渡赤水纪念馆的详细信息和游玩攻略">
+          <img src="资源文件/土城 红色建筑群/四渡赤水纪念馆.jpg" alt="四渡赤水纪念馆内浮雕" loading="lazy" decoding="async">
+          <div class="spot-content"><h2>四渡赤水纪念馆</h2><p>四渡赤水是中央红军长征中最惊心动魄、最精彩绝伦的军事行动，也是以少胜多、化被动为主动的光辉典范。</p></div>
+        </a>
+        <a class="spot-card reveal" data-spot="four" href="detail.html?spot=four" target="_blank" rel="noopener" aria-label="在新标签页查看娄山关的详细信息和游玩攻略">
+          <img src="资源文件/市区 娄山关/市区 娄山关26.jpg" alt="娄山关景区" loading="lazy" decoding="async">
+          <div class="spot-content"><h2>娄山关</h2><p>娄山关景区以山地路线为主，可依次探访摩崖石刻、红军烈士纪念碑、战壕遗址、长空桥、雁鸣塔、英雄纪念林与红军战斗遗址陈列馆。</p></div>
+        </a>
+        <a class="spot-card reveal" data-spot="five" href="detail.html?spot=five" target="_blank" rel="noopener" aria-label="在新标签页查看茅台四渡赤水纪念园的详细信息和游玩攻略">
+          <img src="资源文件/茅台镇 四渡赤水纪念园/茅台镇 四渡赤水纪念园12.jpg" alt="茅台四渡赤水纪念园" loading="lazy" decoding="async">
+          <div class="spot-content"><h2>茅台四渡赤水纪念园</h2><p>进入纪念园，沿途浮雕展示红军将士四渡赤水时的英雄气概；可继续参观红军长征过茅台陈列馆和红军四渡赤水纪念塔。</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="x4" class="reveal" style="margin-top:84px">
+      <div class="section-heading"><span>REFLECTION</span><h2>实践感悟</h2><p>本次活动是讲好红色故事、传承红色基因的生动写照。队员在与历史和历史人物的对话中学习红色文化、触摸红色印记、体悟红色精神，坚定做长征精神的传承者、践行者、弘扬者，讲好中国故事、传播好中国声音。</p></div>
+    </section>
+  </main>
+
+  <a class="back-top" href="#x1" aria-label="返回顶部">↑</a>
+  <footer>社会实践成果展示 · 此页面内容可自由编辑</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* “四渡赤水纪念园”专属的瀑布流游览记样式。 */
+
+.detail-content[data-spot="five"] .route-note {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(217, 164, 65, 0.14), transparent 30%),
+    var(--paper);
+}
+
+.detail-content[data-spot="five"] .memorial-route__intro {
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.detail-content[data-spot="five"] .memorial-route__kicker {
+  margin: 0 0 3px;
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.detail-content[data-spot="five"] .memorial-route__intro h3 {
+  position: relative;
+  padding-bottom: 12px;
+  margin: 0 0 14px;
+  color: var(--deep-red);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+}
+
+.detail-content[data-spot="five"] .memorial-route__intro h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background: var(--gold);
+  content: "";
+}
+
+.detail-content[data-spot="five"] .memorial-route__intro > p:last-child {
+  margin: 0;
+  color: #765d50;
+}
+
+.detail-content[data-spot="five"] .memorial-masonry {
+  --masonry-card-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  grid-auto-rows: 2px;
+  column-gap: 20px;
+  row-gap: 4px;
+  align-items: start;
+}
+
+.detail-content[data-spot="five"] .memorial-card {
+  display: block;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #fffaf0;
+  border: 1px solid rgba(217, 164, 65, 0.34);
+  border-bottom: 3px solid var(--red);
+  box-shadow: 0 10px 24px rgba(83, 47, 33, 0.11);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.detail-content[data-spot="five"] .memorial-card:hover {
+  box-shadow: 0 16px 30px rgba(83, 47, 33, 0.18);
+  transform: translateY(-4px);
+}
+
+.detail-content[data-spot="five"] .memorial-card__media {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(112, 16, 20, 0.04), rgba(112, 16, 20, 0.04)),
+    repeating-linear-gradient(45deg, #f1e2c8 0 12px, #f7ebd7 12px 24px);
+}
+
+.detail-content[data-spot="five"] .memorial-card--portrait .memorial-card__media {
+  aspect-ratio: 4 / 5;
+}
+
+.detail-content[data-spot="five"] .memorial-card--landscape .memorial-card__media {
+  aspect-ratio: 16 / 10;
+}
+
+.detail-content[data-spot="five"] .memorial-card--square .memorial-card__media {
+  aspect-ratio: 1;
+}
+
+.detail-content[data-spot="five"] .memorial-card--tall .memorial-card__media {
+  aspect-ratio: 3 / 4;
+}
+
+.detail-content[data-spot="five"] .memorial-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #856e63;
+  font-size: 0.82rem;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.detail-content[data-spot="five"] .memorial-card:hover img {
+  transform: scale(1.035);
+}
+
+.detail-content[data-spot="five"] .memorial-card__index {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  color: #fff7e8;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  background: rgba(112, 16, 20, 0.9);
+  border: 1px solid rgba(255, 215, 125, 0.74);
+  border-radius: 50%;
+  place-items: center;
+}
+
+.detail-content[data-spot="five"] .memorial-card figcaption {
+  padding: 18px 20px 21px;
+}
+
+.detail-content[data-spot="five"] .memorial-card h4 {
+  margin: 0 0 7px;
+  color: var(--deep-red);
+  font-size: 1.08rem;
+}
+
+.detail-content[data-spot="five"] .memorial-card p {
+  margin: 0;
+  color: #604b42;
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .detail-content[data-spot="five"] .memorial-masonry {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .detail-content[data-spot="five"] .memorial-masonry {
+    --masonry-card-gap: 16px;
+    grid-template-columns: 1fr;
+  }
+}

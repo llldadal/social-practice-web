@@ -1,0 +1,29 @@
+/* “青杠坡战斗遗址”的链接交互：与其他景点的路线索引和详情链接保持一致。 */
+
+.detail-content[data-spot="three"] .shared-route__nav a:hover,
+.detail-content[data-spot="three"] .shared-route__nav a:focus-visible {
+  color: #fffaf0;
+  background: var(--shared-red);
+  outline: 3px solid #fff4d7;
+  outline-offset: -4px;
+  transform: translateY(-2px);
+}
+
+.detail-content[data-spot="three"] .shared-route__nav a:hover span,
+.detail-content[data-spot="three"] .shared-route__nav a:focus-visible span {
+  color: #fff4d7;
+}
+
+.detail-content[data-spot="three"] .shared-route__links a:hover {
+  display: flex;
+  color: var(--shared-deep);
+  border-color: var(--shared-deep);
+}
+
+.detail-content[data-spot="three"] .shared-route__links a:focus-visible {
+  display: flex;
+  color: var(--shared-deep);
+  border-color: var(--shared-deep);
+  outline: 3px solid rgba(100, 17, 22, 0.24);
+  outline-offset: 2px;
+}

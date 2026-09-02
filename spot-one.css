@@ -1,0 +1,453 @@
+/* “遵义会议纪念馆”的专属路线样式，仅在 detail.html?spot=one 时加载。 */
+
+.detail-content[data-spot="one"] .route-note {
+  overflow: hidden;
+}
+
+.detail-content[data-spot="one"] .memorial-route {
+  --route-red: #a7191f;
+  --route-deep: #641116;
+  --route-gold: #d9a441;
+  --route-ink: #604b42;
+  margin-bottom: 70px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__intro,
+.detail-content[data-spot="one"] .memorial-route__overview {
+  max-width: 760px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__intro {
+  padding: 10px 0 52px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__eyebrow {
+  margin: 0 0 8px;
+  color: var(--route-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.detail-content[data-spot="one"] .route-story__text .memorial-route__section-title {
+  margin: 0 0 12px;
+  color: var(--route-deep);
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+}
+
+.detail-content[data-spot="one"] .memorial-route__intro > p:not(.memorial-route__eyebrow),
+.detail-content[data-spot="one"] .memorial-route__overview p {
+  margin: 0;
+  color: var(--route-ink);
+}
+
+.detail-content[data-spot="one"] .memorial-route__tips {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  padding: 20px 24px;
+  margin-top: 22px;
+  color: var(--route-ink);
+  background: rgba(167, 25, 31, 0.07);
+  border-top: 2px solid var(--route-gold);
+}
+
+.detail-content[data-spot="one"] .memorial-route__tips strong {
+  color: var(--route-deep);
+  letter-spacing: 0.1em;
+}
+
+.detail-content[data-spot="one"] .memorial-route__tips ol {
+  padding-left: 1.25em;
+  margin: 0;
+}
+
+.detail-content[data-spot="one"] .memorial-route__tips li + li {
+  margin-top: 7px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__overview {
+  padding-bottom: 24px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__guide-sign {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.55fr);
+  padding: 0;
+  margin: 0 0 28px;
+  overflow: hidden;
+  background: #fffaf0;
+  border: 0;
+  box-shadow: 0 10px 24px rgba(83, 47, 33, 0.13);
+}
+
+.detail-content[data-spot="one"] .memorial-route__guide-sign img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.detail-content[data-spot="one"] .memorial-route__guide-sign figcaption {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 26px;
+  color: var(--route-ink);
+  background: rgba(255, 250, 240, 0.92);
+}
+
+.detail-content[data-spot="one"] .memorial-route__guide-sign strong {
+  color: var(--route-deep);
+  font-size: 1.08rem;
+}
+
+.detail-content[data-spot="one"] .memorial-route__guide-sign span {
+  color: #765d50;
+  font-size: 0.9rem;
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 54px;
+  border: 1px solid rgba(100, 17, 22, 0.16);
+  box-shadow: 0 9px 24px rgba(83, 47, 33, 0.08);
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav a {
+  display: grid;
+  gap: 2px;
+  padding: 15px 7px;
+  color: var(--route-deep);
+  font-size: 0.82rem;
+  text-align: center;
+  text-decoration: none;
+  background: rgba(255, 250, 240, 0.84);
+  transition: color 0.2s, background 0.2s;
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav a + a {
+  border-left: 1px solid rgba(100, 17, 22, 0.16);
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav a:hover {
+  color: #fffaf0;
+  background: var(--route-red);
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav a:focus-visible {
+  color: #fffaf0;
+  background: var(--route-red);
+  outline: 3px solid #fff4d7;
+  outline-offset: -4px;
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav span {
+  color: #7b4e05;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.detail-content[data-spot="one"] .memorial-route__nav a:hover span,
+.detail-content[data-spot="one"] .memorial-route__nav a:focus-visible span {
+  color: #fff4d7;
+}
+
+.detail-content[data-spot="one"] .memorial-timeline {
+  position: relative;
+}
+
+.detail-content[data-spot="one"] .memorial-timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 39px;
+  width: 2px;
+  background: linear-gradient(var(--route-gold), var(--route-red) 12%, var(--route-red) 88%, var(--route-gold));
+  content: "";
+}
+
+.detail-content[data-spot="one"] .memorial-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  scroll-margin-top: 96px;
+}
+
+.detail-content[data-spot="one"] .memorial-stage + .memorial-stage {
+  margin-top: 70px;
+}
+
+.detail-content[data-spot="one"] .memorial-stage__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-left: 12px;
+  color: #fffaf0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: var(--route-deep);
+  border: 5px solid #f8edda;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--route-gold);
+}
+
+.detail-content[data-spot="one"] .memorial-stage__content {
+  min-width: 0;
+}
+
+.detail-content[data-spot="one"] .memorial-stage__heading {
+  max-width: 720px;
+  padding-bottom: 20px;
+}
+
+.detail-content[data-spot="one"] .memorial-stage__floor {
+  margin: 0 0 3px;
+  color: var(--route-red);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.detail-content[data-spot="one"] .memorial-stage__heading h4 {
+  margin: 0 0 10px;
+  color: var(--route-deep);
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+}
+
+.detail-content[data-spot="one"] .memorial-stage__heading > p:last-child {
+  margin: 0;
+  color: var(--route-ink);
+}
+
+.detail-content[data-spot="one"] .memorial-photo {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #f0dfc2;
+  border: 0;
+  box-shadow: 0 10px 24px rgba(83, 47, 33, 0.13);
+}
+
+.detail-content[data-spot="one"] .memorial-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  background:
+    linear-gradient(135deg, rgba(100, 17, 22, 0.12), rgba(217, 164, 65, 0.16)),
+    repeating-linear-gradient(45deg, #ead8ba 0, #ead8ba 14px, #f4e7cf 14px, #f4e7cf 28px);
+}
+
+.detail-content[data-spot="one"] .memorial-photo figcaption {
+  min-height: 48px;
+  padding: 12px 14px;
+  color: #765d50;
+  font-size: 0.82rem;
+  background: #fffaf0;
+}
+
+.detail-content[data-spot="one"] .route-story__text > .memorial-route__section-title {
+  margin-top: 70px;
+}
+
+.detail-content[data-spot="one"] .route-story__text > a {
+  display: flex;
+  color: var(--route-red);
+  font-size: 0.92rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.detail-content[data-spot="one"] .route-story__text > a:hover {
+  display: flex;
+  color: var(--route-deep);
+  border-color: var(--route-deep);
+}
+
+@media (max-width: 860px) {
+  .detail-content[data-spot="one"] .memorial-route__nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(5) {
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(n + 5) {
+    border-top: 1px solid rgba(100, 17, 22, 0.16);
+  }
+}
+
+@media (max-width: 680px) {
+  .detail-content[data-spot="one"] .memorial-route__tips,
+  .detail-content[data-spot="one"] .memorial-route__guide-sign {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__guide-sign img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 42px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(n + 3) {
+    border-top: 1px solid rgba(100, 17, 22, 0.16);
+  }
+
+  .detail-content[data-spot="one"] .memorial-timeline::before {
+    left: 23px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage {
+    grid-template-columns: 54px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage__marker {
+    width: 44px;
+    height: 44px;
+    margin-left: 1px;
+    border-width: 4px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-photo img {
+    aspect-ratio: 4 / 3;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .detail-content[data-spot="one"] .memorial-route__eyebrow {
+    letter-spacing: 0.07em;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a + a {
+    border-top: 1px solid rgba(100, 17, 22, 0.16);
+    border-left: 0;
+  }
+
+  .detail-content[data-spot="one"] .memorial-timeline::before {
+    left: 19px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage {
+    grid-template-columns: 44px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage__marker {
+    width: 38px;
+    height: 38px;
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+
+}
+
+/* 窄屏保留横向路线索引，并把正文宽度优先留给内容。 */
+@media (max-width: 680px) {
+  .detail-content[data-spot="one"] .memorial-route {
+    margin-bottom: 48px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__intro {
+    padding-bottom: 34px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__tips {
+    gap: 8px;
+    padding: 17px 18px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__guide-sign figcaption {
+    padding: 20px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 -2px 38px;
+    padding: 2px 2px 10px;
+    overflow-x: auto;
+    border: 0;
+    box-shadow: none;
+    scroll-padding-inline: 2px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgba(167, 25, 31, 0.42) transparent;
+    scrollbar-width: thin;
+  }
+
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(n),
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(odd),
+  .detail-content[data-spot="one"] .memorial-route__nav a:nth-child(n + 3) {
+    flex: 0 0 min(65vw, 168px);
+    align-content: center;
+    min-height: 58px;
+    padding: 10px 12px;
+    border: 1px solid rgba(100, 17, 22, 0.16);
+    border-radius: 7px;
+    scroll-snap-align: start;
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage + .memorial-stage {
+    margin-top: 48px;
+  }
+
+  .detail-content[data-spot="one"] .route-story__text > .memorial-route__section-title {
+    margin-top: 48px;
+  }
+
+  .detail-content[data-spot="one"] .route-story__text > a {
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  .detail-content[data-spot="one"] .memorial-timeline::before {
+    left: 17px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage {
+    grid-template-columns: 38px minmax(0, 1fr);
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage__marker {
+    width: 34px;
+    height: 34px;
+    margin-top: 2px;
+    border-width: 3px;
+  }
+
+  .detail-content[data-spot="one"] .memorial-stage__heading h4 {
+    font-size: 1.24rem;
+    line-height: 1.4;
+  }
+
+  .detail-content[data-spot="one"] .memorial-photo figcaption {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 0.86rem;
+  }
+}
