@@ -98,6 +98,7 @@
 .detail-intro p {
   margin: 0;
   color: #604b42;
+  text-indent: 2em;
 }
 
 .guide-grid {
@@ -132,6 +133,7 @@
 .guide-grid p {
   margin: 0;
   color: #604b42;
+  text-indent: 2em;
 }
 
 .route-note {
@@ -142,6 +144,20 @@
 .route-content {
   margin-top: 22px;
   color: #604b42;
+}
+
+.route-content p:not([class]) {
+  text-indent: 2em;
+}
+
+.route-content blockquote p {
+  text-indent: 0;
+}
+
+.route-content > div > a:first-of-type {
+  padding-top: 22px;
+  margin-top: 56px;
+  border-top: 1px solid rgba(100, 17, 22, 0.3);
 }
 
 .route-content nav a:focus-visible {

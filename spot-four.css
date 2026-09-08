@@ -17,10 +17,11 @@
 
 .detail-content[data-spot="four"] .loushan-route__intro {
   display: grid;
-  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 58px);
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
   align-items: start;
   padding: 12px 0 42px;
+  text-align: center;
 }
 
 .detail-content[data-spot="four"] .loushan-route__year {
@@ -67,17 +68,14 @@
   color: var(--pass-deep);
   font-size: clamp(1.55rem, 3vw, 2.1rem);
   line-height: 1.24;
+  text-align: center;
 }
 
 .detail-content[data-spot="four"] .loushan-route__section-title--links {
   margin-top: 70px;
 }
 
-.detail-content[data-spot="four"] .loushan-route__links {
-  display: block;
-}
-
-.detail-content[data-spot="four"] .loushan-route__links a {
+.detail-content[data-spot="four"] .loushan-route > a {
   display: flex;
   color: var(--pass-red);
   font-size: 0.92rem;
@@ -86,13 +84,13 @@
   transition: 0.25s;
 }
 
-.detail-content[data-spot="four"] .loushan-route__links a:hover {
+.detail-content[data-spot="four"] .loushan-route > a:hover {
   display: flex;
   color: var(--pass-deep);
   border-color: var(--pass-deep);
 }
 
-.detail-content[data-spot="four"] .loushan-route__links a:focus-visible {
+.detail-content[data-spot="four"] .loushan-route > a:focus-visible {
   display: flex;
   color: var(--pass-deep);
   border-color: var(--pass-deep);
@@ -103,6 +101,8 @@
 .detail-content[data-spot="four"] .loushan-route__lead > p:last-of-type {
   margin: 0;
   color: var(--pass-ink);
+  text-align: center;
+  text-indent: 0;
 }
 
 .detail-content[data-spot="four"] .loushan-route__lead blockquote {
@@ -529,7 +529,7 @@
     margin-top: 48px;
   }
 
-  .detail-content[data-spot="four"] .loushan-route__links a {
+  .detail-content[data-spot="four"] .loushan-route > a {
     align-items: center;
     min-height: 44px;
   }

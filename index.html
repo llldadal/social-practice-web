@@ -30,7 +30,6 @@
       <p class="eyebrow">社会实践 · 红色足迹游览指南</p>
       <h1>追寻红色足迹</h1>
       <p>2026年是中国工农红军长征胜利90周年。为讲好红色故事，赓续红色基因，南开大学“红韵同音”实践队来到贵州遵义，按照“遵义会议—四渡赤水”的时间顺序重走长征路。</p>
-      <a class="button" href="#x3">开启游览指南</a>
     </div>
   </section>
 
@@ -69,6 +68,9 @@
               <pattern id="mapGrid" width="54" height="54" patternUnits="userSpaceOnUse">
                 <path d="M54 0H0V54" fill="none" stroke="#9b7a55" stroke-width="1" opacity=".12"/>
               </pattern>
+              <marker id="practiceRouteArrow" viewBox="0 0 10 10" refX="22" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto" overflow="visible">
+                <path d="M1 1L9 5 1 9" fill="none" stroke="#a7191f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </marker>
             </defs>
 
             <rect width="1000" height="560" rx="22" fill="url(#paperWash)"/>
@@ -99,7 +101,10 @@
             <path class="minor-road" d="M855 422C831 356 806 308 805 255"/>
 
             <path class="practice-route route-underlay" d="M855 422C690 315 390 245 179 110L157 119C413 164 689 219 805 255C681 301 571 319 439 333"/>
-            <path class="practice-route" d="M855 422C690 315 390 245 179 110L157 119C413 164 689 219 805 255C681 301 571 319 439 333"/>
+            <path class="practice-route" d="M855 422C690 315 390 245 179 110" marker-end="url(#practiceRouteArrow)"/>
+            <path class="practice-route" d="M179 110L157 119" marker-end="url(#practiceRouteArrow)"/>
+            <path class="practice-route" d="M157 119C413 164 689 219 805 255" marker-end="url(#practiceRouteArrow)"/>
+            <path class="practice-route" d="M805 255C681 301 571 319 439 333" marker-end="url(#practiceRouteArrow)"/>
 
             <g class="map-marker" data-spot="one" role="button" tabindex="0" aria-label="定位到遵义会议纪念馆景点卡片" transform="translate(855 422)">
               <circle class="marker-halo" r="25"/>

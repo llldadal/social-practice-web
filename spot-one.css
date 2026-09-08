@@ -14,7 +14,8 @@
 
 .detail-content[data-spot="one"] .memorial-route__intro,
 .detail-content[data-spot="one"] .memorial-route__overview {
-  max-width: 760px;
+  width: 100%;
+  max-width: none;
 }
 
 .detail-content[data-spot="one"] .memorial-route__intro {
@@ -33,12 +34,15 @@
   margin: 0 0 12px;
   color: var(--route-deep);
   font-size: clamp(1.55rem, 3vw, 2.1rem);
+  text-align: center;
 }
 
 .detail-content[data-spot="one"] .memorial-route__intro > p:not(.memorial-route__eyebrow),
 .detail-content[data-spot="one"] .memorial-route__overview p {
   margin: 0;
   color: var(--route-ink);
+  text-align: center;
+  text-indent: 0;
 }
 
 .detail-content[data-spot="one"] .memorial-route__tips {
@@ -68,6 +72,7 @@
 
 .detail-content[data-spot="one"] .memorial-route__overview {
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .detail-content[data-spot="one"] .memorial-route__guide-sign {

@@ -12,8 +12,10 @@
 }
 
 .detail-content[data-spot="two"] .crossing-route__intro {
-  max-width: 760px;
+  width: 100%;
+  max-width: none;
   padding: 10px 0 34px;
+  text-align: center;
 }
 
 .detail-content[data-spot="two"] .crossing-route__eyebrow {
@@ -28,6 +30,7 @@
   margin: 0 0 12px;
   color: var(--timeline-deep);
   font-size: clamp(1.55rem, 3vw, 2.1rem);
+  text-align: center;
 }
 
 .detail-content[data-spot="two"] .crossing-route > .crossing-route__section-title {
@@ -59,6 +62,8 @@
 .detail-content[data-spot="two"] .crossing-route__intro > p:last-child {
   margin: 0;
   color: var(--timeline-ink);
+  text-align: center;
+  text-indent: 0;
 }
 
 .detail-content[data-spot="two"] .crossing-route__nav {
