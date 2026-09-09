@@ -527,6 +527,7 @@ section {
   position: relative;
   display: grid;
   grid-template-columns: minmax(240px, 0.9fr) 1.1fr;
+  scroll-margin-top: calc(96px + env(safe-area-inset-top));
   overflow: hidden;
   color: inherit;
   text-decoration: none;

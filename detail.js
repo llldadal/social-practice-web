@@ -113,7 +113,7 @@ const spotData = {
               <div class="memorial-stage__content">
                 <div class="memorial-stage__heading">
                   <h4>二楼展馆丨回望长征历程</h4>
-                  <p>上二楼后先参观右侧展馆，依次了解飞夺泸定桥、翻雪山过草地。胜利会师等相关历史。参观途中若感到疲劳，可在二楼回廊座椅处休息。</p>
+                  <p>上二楼后先参观右侧展馆，依次了解飞夺泸定桥、翻雪山过草地、胜利会师等相关历史。参观途中若感到疲劳，可在二楼回廊座椅处休息。</p>
                 </div>
                 <figure class="memorial-photo memorial-photo--wide">
                   <img src="资源文件/市区 遵义会议会址/市区 遵义会议会址47.jpg" alt="二楼长征主题展陈图片（待补充）">
@@ -208,13 +208,13 @@ const spotData = {
                   <img src="资源文件/土城 红色建筑群/补充图片/四渡赤水纪念馆/二渡路线.jpg" alt="二渡赤水路线图">
                   <figcaption>二渡赤水路线图 | 红军从太平渡、二郎滩、九溪口等渡口渡河，回师黔北</figcaption>
                 </figure>
-                <figure class="crossing-photo crossing-photo--tall">
+                <figure class="crossing-photo">
                   <img src="资源文件/土城 红色建筑群/补充图片/四渡赤水纪念馆/娄山关壁画.jpg" alt="娄山关战斗壁画">
                   <figcaption>娄山关战斗展陈 | 再现娄山关大捷，彰显红军英勇攻坚的战斗气魄</figcaption>
                 </figure>
-                <figure class="crossing-photo">
-                  <img alt="二渡赤水简介展板">
-                  <figcaption></figcaption>
+                <figure class="crossing-photo crossing-photo--wide">
+                  <img src="资源文件/土城 红色建筑群/忆秦娥娄山关题词.jpg" alt="忆秦娥娄山关题词">
+                  <figcaption>《忆秦娥·娄山关》丨“雄关漫道真如铁，而今迈步从头越。”体会毛主席在娄山关大捷后的喜悦之情和革命乐观主义精神</figcaption>
                 </figure>
               </div>
             </div>
@@ -234,7 +234,7 @@ const spotData = {
                   <figcaption>鲁班场战斗展陈 | 还原激战实况，体现红军审时度势调整作战部署</figcaption>
                 </figure>
                 <figure class="crossing-photo">
-                  <img alt="红军渡河主题油画">
+                  <img src="资源文件/土城 红色建筑群/四渡赤水03.jpg" alt="红军渡河主题油画">
                   <figcaption>茅台渡河 | 红军三渡佯动惑敌，调敌西进，为四渡回师创造战机</figcaption>
                 </figure>
                 <figure class="crossing-photo">
@@ -258,7 +258,7 @@ const spotData = {
                   <figcaption>四渡赤水路线图 | 红军迂回穿插，跳出敌军包围圈，突返黔北</figcaption>
                 </figure>
                 <figure class="crossing-photo">
-                  <img src="资源文件/土城 红色建筑群/补充图片/四渡赤水纪念馆/进馆浮雕.jpg.jpeg" alt="四渡赤水纪念馆渡河主题浮雕">
+                  <img src="资源文件/土城 红色建筑群/四渡赤水04.jpg" alt="红九军团断后史料">
                   <figcaption>红九军团断后史料 | 红军主力南下时，九军团暂留黔北牵制敌军，为我军南渡乌江创造了良好时机</figcaption>
                 </figure>
                 <figure class="crossing-photo crossing-photo--wide">
@@ -515,8 +515,8 @@ const spotData = {
     contentStylesheets: ['shared-route.css'],
     summary: '沿纪念园浮雕、红军长征过茅台陈列馆和红军四渡赤水纪念塔，了解红军在茅台三渡赤水的历史。',
     introduction: '纪念园通过沿途浮雕、场馆陈设、敌我局势图、文字史料和展板，展示红军将士四渡赤水时的英雄气概，以及红军与茅台镇人民的军民鱼水情。',
-    hours: '每周二至周日8：00~21：00。',
-    traffic: '网约车至纪念园随后开始参观。',
+    hours: '红军长征过茅台陈列馆无需预约，展馆开放时间为每周二至周日8:00~21:00。建议游览时长约1.5小时。',
+    traffic: '可乘网约车直达纪念园，参观结束后可步行至红军桥、茅台渡口纪念碑等周边红色遗址继续游览。',
     tips: '可结合场馆内的敌我局势图、文字史料和展板，重点了解红军三渡赤水前后的历史细节。',
     route: `
       <div class="shared-route">
@@ -537,11 +537,11 @@ const spotData = {
             <div class="shared-route__card">
               <div class="shared-route__text">
                 <h4>四渡赤水浮雕墙</h4>
-                <p>进入纪念园，沿途浮雕展示红军将士四渡赤水时的英雄气概。</p>
+                <p>浮雕墙位于纪念园转角，以丹霞石雕刻，重点再现红军将士在茅台渡口三渡赤水时的战斗与渡河场景。</p>
               </div>
               <figure class="shared-route__media">
-                <img src="资源文件/茅台镇 四渡赤水纪念园/茅台镇 四渡赤水纪念园1.jpg" alt="四渡赤水纪念园红军群像雕塑" loading="lazy">
-                <figcaption>浮雕墙 | 入口处浮雕，再现红军四渡赤水战役场景</figcaption>
+                <img src="资源文件/茅台镇 四渡赤水纪念园/浮雕.jpg" alt="四渡赤水纪念园红军群像雕塑" loading="lazy">
+                <figcaption>浮雕墙 | 丹霞浮雕，重现茅台渡口三渡赤水</figcaption>
               </figure>
             </div>
           </article>
@@ -554,7 +554,7 @@ const spotData = {
                 <p>沿场馆内地标，结合馆内陈设、敌我局势图等材料可依次了解红军四渡赤水的历史。馆内详细介绍红军长征中两次经过仁怀的细节，特别聚焦红军于茅台镇三渡赤水前后的历史；结合文字史料和展板，可深入体会红军与茅台镇人民的军民鱼水情。</p>
               </div>
               <figure class="shared-route__media">
-                <img src="资源文件/茅台镇 四渡赤水纪念园/茅台镇 四渡赤水纪念园2.jpg" alt="四渡赤水纪念园展览前言" loading="lazy">
+                <img src="资源文件/茅台镇 四渡赤水纪念园/三渡赤水.jpg" alt="四渡赤水纪念园展览前言" loading="lazy">
                 <figcaption>前沿展板 | 系统概括茅台三渡的战役背景、主要过程与历史意义</figcaption>
               </figure>
             </div>
@@ -568,7 +568,7 @@ const spotData = {
                 <p>出陈列馆沿台阶向上，四渡赤水纪念塔屹立眼前。纪念塔基座呈船形，塔身四根波浪柱错位重叠，象征红军四次渡河的机动迂回与乘风破浪的坚定信念。北侧四幅浮雕再现四渡赤水战役场景，环塔展板详述红军三渡赤水历史细节。</p>
               </div>
               <figure class="shared-route__media shared-route__media--portrait">
-                <img src="资源文件/茅台镇 四渡赤水纪念园/茅台镇 四渡赤水纪念园3.jpg" alt="马灯照亮前行路主题画面" loading="lazy">
+                <img src="资源文件/茅台镇 四渡赤水纪念园/纪念塔.jpg" alt="马灯照亮前行路主题画面" loading="lazy">
                 <figcaption>纪念塔 | 船形基座与波浪柱身呼应渡河主题，环塔展板详述三渡赤水</figcaption>
               </figure>
             </div>
@@ -590,8 +590,10 @@ const spotKey = Object.prototype.hasOwnProperty.call(spotData, requestedSpotKey)
 const spot = spotData[spotKey];
 
 const detailContent = document.querySelector('.detail-content');
+const detailBackLink = document.querySelector('.detail-back');
 document.body.dataset.spot = spotKey;
 detailContent.dataset.spot = spotKey;
+detailBackLink.href = `index.html#spot-${spotKey}`;
 
 // 每个景点可以加载不同的正文样式表。既支持字符串，也支持字符串数组。
 const contentStylesheets = Array.isArray(spot.contentStylesheets)
