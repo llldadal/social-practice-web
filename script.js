@@ -110,3 +110,10 @@ if (mapCanvas && window.matchMedia('(max-width: 680px)').matches) {
     mapCanvas.scrollLeft = mapCanvas.scrollWidth - mapCanvas.clientWidth;
   });
 }
+
+document.querySelectorAll('.spot-card img[data-original-src]').forEach(image => {
+  window.siteImagePreviews?.enhance(image, image.dataset.originalSrc, {
+    sizes: '(max-width: 680px) calc(100vw - 36px), (max-width: 980px) calc(50vw - 30px), 360px',
+    clickToOriginal: true
+  });
+});

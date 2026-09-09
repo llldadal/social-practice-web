@@ -441,7 +441,7 @@ const spotData = {
                 <p>小尖山顶视野开阔，碎石块在此环坑堆砌，形成浅洼状战壕。站在这制高点俯瞰山谷，可以更直观认识抢占关口对于侦察与防御的决定性意义，感受到当年红军抢先登上制高点五分钟的重量。</p>
               </div>
               <figure class="loushan-stop__media">
-                <img alt="小尖山战壕遗址说明牌与石垒战壕" loading="lazy">
+                <img src="资源文件/市区 娄山关/市区 娄山关39.jpg" alt="小尖山战壕遗址说明牌与石垒战壕" loading="lazy">
                 <figcaption>战壕遗址 | 娄山关战斗时期修筑的防御工事遗存</figcaption>
               </figure>
             </div>
@@ -610,8 +610,15 @@ contentStylesheets.forEach(href => {
 
 document.title = `${spot.title} · 红色足迹`;
 document.querySelector('#spot-title').textContent = spot.title;
-document.querySelector('#spot-image').src = spot.image;
-document.querySelector('#spot-image').alt = `${spot.title}图片`;
+const spotImage = document.querySelector('#spot-image');
+const spotImageLink = document.querySelector('#spot-image-link');
+spotImage.alt = `${spot.title}图片`;
+spotImageLink.href = spot.image;
+spotImageLink.setAttribute('aria-label', `在新标签页查看${spot.title}原图`);
+window.siteImagePreviews?.enhance(spotImage, spot.image, {
+  sizes: '100vw',
+  loading: 'eager'
+});
 document.querySelector('#spot-summary').textContent = spot.summary;
 document.querySelector('#spot-introduction').textContent = spot.introduction;
 document.querySelector('#spot-hours').textContent = spot.hours;
@@ -621,19 +628,9 @@ document.querySelector('#spot-tips').textContent = spot.tips;
 const routeSection = document.querySelector('.route-note');
 const routeContent = document.querySelector('#spot-route');
 
-const routePreviewPath = (source, width) => {
-  const fileNameStart = source.lastIndexOf('/') + 1;
-  const extensionStart = source.lastIndexOf('.');
-  if (extensionStart <= fileNameStart) return null;
-
-  const directory = source.slice(0, fileNameStart);
-  const fileStem = source.slice(fileNameStart, extensionStart);
-  return `${directory}响应式预览/${fileStem}-${width}.webp`;
-};
-
 const enhanceRouteMedia = () => {
   routeContent.querySelectorAll('img').forEach(image => {
-    const originalSource = image.getAttribute('src')?.trim();
+    const originalSource = (image.dataset.originalSrc || image.getAttribute('src'))?.trim();
     image.loading = 'lazy';
     image.decoding = 'async';
 
@@ -653,23 +650,10 @@ const enhanceRouteMedia = () => {
       return;
     }
 
-    const smallPreview = routePreviewPath(originalSource, 480);
-    const mediumPreview = routePreviewPath(originalSource, 960);
-    const largePreview = routePreviewPath(originalSource, 1600);
-    if (!smallPreview || !mediumPreview || !largePreview) return;
-
-    let usingFallback = false;
-    image.addEventListener('error', () => {
-      if (usingFallback) return;
-      usingFallback = true;
-      image.removeAttribute('srcset');
-      image.removeAttribute('sizes');
-      image.src = originalSource;
+    window.siteImagePreviews?.enhance(image, originalSource, {
+      sizes: '(max-width: 680px) calc(100vw - 74px), (max-width: 1120px) calc(100vw - 176px), 900px',
+      clickToOriginal: true
     });
-
-    image.src = smallPreview;
-    image.srcset = `${encodeURI(smallPreview)} 480w, ${encodeURI(mediumPreview)} 960w, ${encodeURI(largePreview)} 1600w`;
-    image.sizes = '(max-width: 680px) calc(100vw - 74px), (max-width: 1120px) calc(100vw - 176px), 900px';
   });
 
   routeContent.querySelectorAll('a').forEach(link => {
@@ -695,7 +679,11 @@ if (spot.route) {
     }));
     routeContent.replaceChildren(list);
   } else {
-    routeContent.innerHTML = spot.route;
+    const deferredImageRoute = spot.route.replace(
+      /(<img\b[^>]*?)\s+src="([^"]+)"/gi,
+      '$1 data-original-src="$2"'
+    );
+    routeContent.innerHTML = deferredImageRoute;
   }
 } else {
   routeSection.hidden = true;

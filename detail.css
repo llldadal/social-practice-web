@@ -37,6 +37,18 @@
   color: white;
 }
 
+.detail-hero-image-link {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.detail-hero-image-link:focus-visible {
+  z-index: 2;
+  outline: 3px solid var(--gold);
+  outline-offset: -6px;
+}
+
 .detail-hero img {
   position: absolute;
   width: 100%;
@@ -49,6 +61,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(105deg, rgba(94, 10, 14, 0.93), rgba(112, 16, 20, 0.42));
+  pointer-events: none;
 }
 
 .detail-hero-text {

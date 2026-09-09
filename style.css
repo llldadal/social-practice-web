@@ -38,6 +38,15 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.image-preview--original-link {
+  cursor: zoom-in;
+}
+
+.image-preview--original-link:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: rgba(217, 164, 65, 0.24);
@@ -113,7 +122,7 @@ nav a:focus-visible,
   overflow: hidden;
   color: white;
   text-align: center;
-  background: linear-gradient(115deg, rgba(94, 10, 14, 0.93), rgba(167, 25, 31, 0.62)), url("资源文件/遵义会议会址/遵义会议纪念馆外部图片.jpg") center / cover;
+  background: linear-gradient(115deg, rgba(94, 10, 14, 0.93), rgba(167, 25, 31, 0.62)), url("资源文件/遵义会议会址/响应式预览/遵义会议纪念馆外部图片-1600.webp") center / cover;
   place-items: center;
 }
 

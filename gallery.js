@@ -95,7 +95,8 @@ document.querySelector('.gallery-back').textContent = `← 返回${gallery.title
 document.querySelector('#gallery-title').textContent = `${gallery.title} · 更多图片`;
 document.querySelector('#gallery-grid-title').textContent = `${gallery.title}图片集`;
 document.querySelector('#gallery-footer').textContent = `社会实践成果展示 · ${gallery.title}图片集`;
-document.querySelector('.gallery-hero').style.setProperty('--gallery-hero-image', `url("${gallery.hero}")`);
+const galleryHeroPreview = window.siteImagePreviews?.previewPath(gallery.hero, 1600) || gallery.hero;
+document.querySelector('.gallery-hero').style.setProperty('--gallery-hero-image', `url("${galleryHeroPreview}")`);
 
 const galleryGrid = document.querySelector('#gallery-grid');
 
@@ -110,10 +111,12 @@ gallery.images.forEach(({ src, caption }, index) => {
   link.setAttribute('aria-label', `在新标签页查看${gallery.title}第 ${index + 1} 张图片原图`);
 
   const image = document.createElement('img');
-  image.src = src;
   image.alt = `${gallery.title}图片：${caption}`;
   image.loading = 'lazy';
   image.decoding = 'async';
+  window.siteImagePreviews?.enhance(image, src, {
+    sizes: '(max-width: 680px) calc(100vw - 36px), (max-width: 980px) calc(50vw - 30px), 360px'
+  });
 
   const imageCaption = document.createElement('figcaption');
   imageCaption.textContent = caption;
