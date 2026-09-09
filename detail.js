@@ -140,7 +140,7 @@ const spotData = {
       </div>
 
       <a href="https://baike.baidu.com/item/%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E7%BA%AA%E5%BF%B5%E9%A6%86/1015399" target="_blank">百度百科 →</a>
-      <a class="more-images-link" href="gallery.html">更多图片 →</a>
+      <a class="more-images-link" href="gallery.html?spot=one">更多图片 →</a>
     </div>
     `
   },
@@ -213,7 +213,7 @@ const spotData = {
                   <figcaption>娄山关战斗展陈 | 再现娄山关大捷，彰显红军英勇攻坚的战斗气魄</figcaption>
                 </figure>
                 <figure class="crossing-photo crossing-photo--wide">
-                  <img src="资源文件/土城 红色建筑群/忆秦娥娄山关题词.jpg" alt="忆秦娥娄山关题词">
+                  <img src="资源文件/土城 红色建筑群/补充图片/四渡赤水纪念馆/忆秦娥娄山关题词.jpg" alt="忆秦娥娄山关题词">
                   <figcaption>《忆秦娥·娄山关》丨“雄关漫道真如铁，而今迈步从头越。”体会毛主席在娄山关大捷后的喜悦之情和革命乐观主义精神</figcaption>
                 </figure>
               </div>
@@ -281,7 +281,7 @@ const spotData = {
 
         </div>
           <a href="https://www.sdcs1935.com" target="_blank">百度百科 →</a>
-          <a class="more-images-link" href="">更多图片 →</a>
+          <a class="more-images-link" href="gallery.html?spot=two">更多图片 →</a>
       </div>
     `
   },
@@ -367,7 +367,7 @@ const spotData = {
         </div>
 
         <a href="https://baike.baidu.com/item/%E9%9D%92%E6%9D%A0%E5%9D%A1%E6%88%98%E6%96%97%E9%81%97%E5%9D%80/19855248" target="_blank">百度百科 →</a>
-        <a class="more-images-link" href="">更多图片 →</a>
+        <a class="more-images-link" href="gallery.html?spot=three">更多图片 →</a>
       </div>
     `
   },
@@ -505,7 +505,7 @@ const spotData = {
         </div>
 
         <a href="https://baike.baidu.com/item/%E5%A8%84%E5%B1%B1%E5%85%B3/1671640" target="_blank">百度百科 →</a>
-        <a class="more-images-link" href="">更多图片 →</a>
+        <a class="more-images-link" href="gallery.html?spot=four">更多图片 →</a>
       </div>
     `
   },
@@ -577,7 +577,7 @@ const spotData = {
         </div>
 
         <a href="https://baike.baidu.com/item/%E7%BA%A2%E5%86%9B%E5%9B%9B%E6%B8%A1%E8%B5%A4%E6%B0%B4%E7%BA%AA%E5%BF%B5%E5%A1%94/15480607" target="_blank">百度百科 →</a>
-        <a class="more-images-link" href="">更多图片 →</a>
+        <a class="more-images-link" href="gallery.html?spot=five">更多图片 →</a>
       </div>
     `
   }

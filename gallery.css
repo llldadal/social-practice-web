@@ -16,7 +16,7 @@
   min-height: 480px;
   overflow: hidden;
   background:
-    url("资源文件/遵义会议会址/遵义会议纪念馆外部图片.jpg") center / cover no-repeat;
+    var(--gallery-hero-image, url("资源文件/遵义会议会址/遵义会议纪念馆外部图片.jpg")) center / cover no-repeat;
   color: #fffaf0;
 }
 
